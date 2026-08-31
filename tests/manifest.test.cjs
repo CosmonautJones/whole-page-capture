@@ -23,3 +23,22 @@ test("requests only the four permissions needed for an explicit local capture", 
   assert.equal(manifest.background.service_worker, "service-worker.js");
   assert.equal(manifest.action.default_popup, "popup.html");
 });
+
+test("references only local runtime files that exist in the release", () => {
+  const manifest = JSON.parse(
+    fs.readFileSync(path.join(repositoryRoot, "manifest.json"), "utf8"),
+  );
+  const runtimePaths = [
+    manifest.background.service_worker,
+    manifest.action.default_popup,
+    ...Object.values(manifest.icons),
+  ];
+
+  for (const relativePath of runtimePaths) {
+    assert.equal(
+      fs.existsSync(path.join(repositoryRoot, relativePath)),
+      true,
+      `${relativePath} must exist`,
+    );
+  }
+});

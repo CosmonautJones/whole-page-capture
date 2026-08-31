@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Whole Page Capture</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <main>
+      <div class="brand-row">
+        <img src="icons/icon-32.png" width="32" height="32" alt="" />
+        <span>Whole Page Capture</span>
+      </div>
+      <section class="status-card" data-status="ready" id="status-card">
+        <p class="eyebrow">STATUS</p>
+        <h1 id="status-title">Ready</h1>
+        <p id="status-copy" aria-live="polite">
+          Right-click a webpage and choose <strong>Capture full webpage</strong>.
+        </p>
+        <p class="filename" id="status-filename" hidden></p>
+      </section>
+      <p class="privacy">
+        Captures stay on this device. No browsing history is stored.
+      </p>
+    </main>
+    <script src="popup.js"></script>
+  </body>
+</html>
