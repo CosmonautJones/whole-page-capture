@@ -1,0 +1,23 @@
+{
+  "name": "whole-page-capture",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Private, local full-page screenshots from the browser right-click menu.",
+  "engines": {
+    "node": ">=24 <25"
+  },
+  "scripts": {
+    "test": "node --test tests/*.test.cjs",
+    "test:core": "node --test tests/capture-core.test.cjs",
+    "check": "node scripts/check-runtime-files.mjs",
+    "package": "pwsh -NoProfile -File scripts/package.ps1",
+    "fixture": "node scripts/serve-fixture.mjs",
+    "verify:capture": "node scripts/verify-capture.mjs",
+    "proof": "node scripts/make-proof.mjs"
+  },
+  "devDependencies": {
+    "jsdom": "28.1.0",
+    "sharp": "0.35.3"
+  }
+}
+
