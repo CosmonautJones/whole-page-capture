@@ -15,14 +15,14 @@ Whole Page Capture is a small Chrome and Microsoft Edge extension that saves a c
 
 ## Install in Chrome
 
-1. Download `whole-page-capture.zip` from the latest release or the portfolio tool page.
+1. Download [`whole-page-capture.zip`](https://github.com/CosmonautJones/whole-page-capture/releases/download/v1.0.0/whole-page-capture.zip) from the [v1.0.0 release](https://github.com/CosmonautJones/whole-page-capture/releases/tag/v1.0.0) (or the portfolio tool page).
 2. Extract the ZIP to a permanent folder.
 3. Open `chrome://extensions` and enable **Developer mode**.
 4. Choose **Load unpacked** and select the extracted folder.
 
 ## Install in Edge
 
-1. Download and extract `whole-page-capture.zip`.
+1. Download and extract [`whole-page-capture.zip`](https://github.com/CosmonautJones/whole-page-capture/releases/download/v1.0.0/whole-page-capture.zip) (same as Chrome).
 2. Open `edge://extensions` and enable **Developer mode**.
 3. Choose **Load unpacked**.
 4. Select the extracted folder.
